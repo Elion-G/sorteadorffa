@@ -7,9 +7,11 @@
 
         <title>Sorteador</title>
 
+        <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-            @vite(['resources/css/bootstrap.min.css', 'resources/js/script.js', 'resources/js/jquery-3.7.1.min.js'])
+            @vite(['resources/js/script.js'])
         @endif
 
         <style>
@@ -88,5 +90,8 @@
             <div id="premio-sorteado" class="text-center">
             </div>
         </div>
+
+        <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('/js/jquery-3.7.1.min.js') }}"></script>
     </body>
 </html>

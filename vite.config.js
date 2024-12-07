@@ -6,13 +6,11 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css', 
-                'resources/css/sorteo.css', 
-                'resources/css/bootstrap.min.css', 
+                'resources/css/sorteo.css',
                 'resources/js/app.js', 
-                'resources/js/bootstrap.min.js', 
                 'resources/js/script.js', 
-                'resources/js/sorteo.js', 
-                'resources/js/jquery-3.7.1.min.js'],
+                'resources/js/sorteo.js'
+            ],
             refresh: true,
         }),
     ],
