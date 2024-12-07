@@ -10,3 +10,4 @@ Route::get('/get-total-premios', [PremiosController::class, 'getTotalPremios']);
 Route::post('/registrar-sorteado', [PremiosController::class, 'registrarSorteado']);
 
 Route::get('/comunes', [SorteoController::class, 'getComunes']);
+Route::get('/get-total-sorteo', [SorteoController::class, 'getTotalSorteos']);

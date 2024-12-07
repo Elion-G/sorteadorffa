@@ -70,12 +70,12 @@
         </style>
     </head>
     <body>
-        <div id="main-fondo-principal" class="main min-vh-100 bg-danger text-center align-items-center align-content-center">
-            <img src="{{ asset('img/LogoNisseiSinSlogan.png') }}" alt="">
+        <div id="main-fondo-principal" class="main min-vh-100 text-center align-items-center align-content-center" style="background-image: url('{{ asset('img/fondo_vertical.jpg') }}');">
+            <img src="{{ asset('img/logo_nissei.png') }}" alt="">
         </div>
 
         <div id="main-premios" class="main">
-            <div id="card-container" class="row">
+            <div id="card-container" class="row row-cols-md-5 g-3">
             </div>
         </div>
 

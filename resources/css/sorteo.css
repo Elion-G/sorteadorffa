@@ -1,0 +1,8 @@
+#ruleta-numeros {
+    width: 300px;  /* Ajusta el tamaño del círculo */
+    height: 300px; /* Ajusta el tamaño del círculo */
+}
+
+#ruleta-numeros h1{
+    font-size: 7rem !important;
+}

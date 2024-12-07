@@ -9,7 +9,7 @@
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-            @vite(['resources/css/bootstrap.min.css', 'resources/js/jquery-3.7.1.min.js'])
+            @vite(['resources/css/sorteo.css', 'resources/css/bootstrap.min.css', 'resources/js/sorteo.js', 'resources/js/jquery-3.7.1.min.js'])
         @endif
 
         <style>
@@ -70,12 +70,27 @@
         </style>
     </head>
     <body>
-        <div id="main-fondo-principal" class="main min-vh-100 text-center align-items-center align-content-center" style="background-image: {{ asset('img/fondo_vertical.jpg') }}">
-            <img src="{{ asset('img/LogoNisseiSinSlogan.png') }}" alt="">
+        <div id="main-fondo-principal" class="main min-vh-100 text-center align-items-center align-content-center" style="background-image: url('{{ asset('img/fondo_vertical.jpg') }}');">
+            <img src="{{ asset('img/logo_nissei.png') }}" alt="">
         </div>
 
-        <div id="main-premios" class="main">
-            <div id="card-container" class="row">
+        <div id="main-ruleta" class="main row d-none">
+            <div id="ruleta-premios" class="col-md-6 col-lg-6 text-center">
+            </div>
+            <div class="col-md-6 col-lg-6 main d-flex justify-content-center align-items-center vh-100">
+                <div id="ruleta-numeros" class="bg-danger text-white rounded-circle d-flex justify-content-center align-items-center">
+                    <h1>001</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-sorteado" class="main d-none">
+            <div id="premio-sorteado" class="col-md-6 col-lg-6 text-center">
+            </div>
+            <div class="col-md-6 col-lg-6 main d-flex justify-content-center align-items-center vh-100">
+                <div id="numero-sorteado" class="bg-danger text-white rounded-circle d-flex justify-content-center align-items-center">
+                    <h1>001</h1>
+                </div>
             </div>
         </div>
     </body>

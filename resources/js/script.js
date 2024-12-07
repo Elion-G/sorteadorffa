@@ -79,7 +79,7 @@ function showAllCards() {
         // Crear la tarjeta actual
         const element = allCardsData[currentCardIndex];
         const cardWrapper = document.createElement('div');
-        cardWrapper.className = 'col-md-2 mb-5 mt-5 card-wrapper';
+        cardWrapper.className = 'col mb-1 card-wrapper';
 
         const card = document.createElement('div');
         if (element.sorteado === 1) {

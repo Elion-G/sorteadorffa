@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-Mae75MYG.css",
+    "file": "assets/app-DIqbdy58.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -19,6 +19,24 @@
     "file": "assets/bootstrap.min-DrT_Hlp0.js",
     "name": "bootstrap.min",
     "src": "resources/js/bootstrap.min.js",
+    "isEntry": true
+  },
+  "resources/js/jquery-3.7.1.min.js": {
+    "file": "assets/jquery-3.7.1.min-B5ZEcMqV.js",
+    "name": "jquery-3.7.1.min",
+    "src": "resources/js/jquery-3.7.1.min.js",
+    "isEntry": true
+  },
+  "resources/js/script.js": {
+    "file": "assets/script-KRn66seh.js",
+    "name": "script",
+    "src": "resources/js/script.js",
+    "isEntry": true
+  },
+  "resources/js/sorteo.js": {
+    "file": "assets/sorteo-l0sNRNKZ.js",
+    "name": "sorteo",
+    "src": "resources/js/sorteo.js",
     "isEntry": true
   }
 }
